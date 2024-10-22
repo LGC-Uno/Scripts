@@ -1,5 +1,6 @@
 local playersInvisibility = game.Players.LocalPlayer.NoSaveData.IsInvisible -- directory of invisibility of player, enables stamina drain when turned on
 local playersEnergy = game.Players.LocalPlayer.NoSaveData.Energy -- directory of stamina of player, drains when invisibility = true
+
 playersInvisibility.Value = false
 
 local function doinv()
@@ -7,7 +8,7 @@ local function doinv()
         wait()
     end
     if playersInvisibility.Value == true then -- if invisibility = true, then script starting to work
-        playersEnergy.Value = playersEnergy.Value + 9.5 -- if u want to gain more stamina then change 9.5 on higher value
+        playersEnergy.Value = playersEnergy.Value + 9.8 -- if u want to gain more stamina then change 9.8 on higher value
         wait()
     end
 end
